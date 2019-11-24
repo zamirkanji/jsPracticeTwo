@@ -4,22 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
   <title>DOM Manipulation Practice</title>
 </head>
 <body>
-  <h2>My First Web Page</h2>
-  <div id="container">
-      <p id="testP"></p> <!-- append lesson --> 
-      <p id="demo"></p>
-    
-    <div id="display">
-        <h2 id="testH2">wazzup</h2>
-        <h4 id="testH4">Zamir</h4>
-          <p id="secondP">Yo</p>
-    </div>
-    <div class="controls">  
-    </div>
+  <div id="container"> 
+        <div class="display"></div>
+        <div class="controls"></div>
+        
+        
+        <!-- Method 1 -->
+        <button onclick="alert('Hello World!')">Click Me</button>
+        <button onclick="alertFunction()">FuncBtn</button>
+        <br>
+        <!-- Method 2 -->
+        <button id="btn">Click Me 2</button>
+        <button id="btnfunc2">FuncBtn2</button>
+        <br>
+        <!-- Method 3 -->
+        <button id="btn3">Click Me 3</button>
+        <button id="btnfunc3">FuncBtn3</button>
+        <br> 
+
+        <button id="btnParam">Parameter</button>
   </div>
+      <script src="script.js"></script>
 </body>
 </html>
