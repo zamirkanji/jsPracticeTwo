@@ -1,4 +1,5 @@
 // PRACTICE 
+// RED PARAGRAPH
 // calls upon div node with the class container
 const container = document.querySelector("#container");
 // create element (paragraph) in memory/DOM
@@ -64,3 +65,13 @@ param.addEventListener("click", function(e) {
   console.log(e);
   // e.target.style.background = "blue";
 })
+
+// GROUPS OF NODES (QUERYSELECTORALL) - node list
+const buttons = document.querySelectorAll("button");
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+    // and for each one we add a "dblclick" listener
+    button.addEventListener("dblclick", (e) => {
+        alert("This button is: #" + button.id);
+    });
+});
